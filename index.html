@@ -1,1 +1,278 @@
-Hello ziualibera.com
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIUA LIBERĂ - Soluții IT&C</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', 'Arial', sans-serif; /* More elegant font */
+            line-height: 1.7;
+            background-color: #0f0f0f; /* Dark background */
+            color: #ffffff; /* White text */
+            font-size: 16px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px; /* Wider container */
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        h1, h2, h3 {
+            font-weight: 300; /* Lighter headings */
+            color: #ffffff; /* White headings */
+            margin-bottom: 1em;
+        }
+
+        h1 { font-size: 2.8em; line-height: 1.2; }
+        h2 { font-size: 2em; margin-top: 2em; padding-bottom: 0.5em; border-bottom: 1px solid #333; }
+        h3 { font-size: 1.4em; }
+
+        p {
+            margin-bottom: 1em;
+            color: #cccccc; /* Light gray text */
+            font-weight: 300; /* Thinner for elegance */
+        }
+
+        a {
+            color: #ffffff; /* White links */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #cccccc; /* Light gray on hover */
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 0.8em;
+            padding-left: 1.5em;
+            position: relative;
+            color: #cccccc; /* Light gray text */
+        }
+
+        ul li::before {
+            content: '›'; /* Different list marker */
+            position: absolute;
+            left: 0;
+            color: #999; /* Medium gray marker */
+            font-weight: bold;
+        }
+
+        /* Header */
+        #header {
+            background: #000000; /* Black header */
+            padding: 20px 0;
+            border-bottom: 1px solid #333;
+            text-align: center; /* Center header content */
+        }
+
+        #header .container {
+            display: flex;
+            justify-content: center; /* Center logo/title */
+            align-items: center;
+        }
+
+        #logo h1 {
+            font-size: 2em;
+            margin: 0;
+            font-weight: 400; /* Slightly bolder for contrast */
+            letter-spacing: 1px; /* Elegant spacing */
+        }
+
+        /* Banner/Hero Section */
+        #banner {
+            background: #000000; /* Black banner */
+            padding: 80px 0; /* More padding for elegance */
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+
+        #banner h2 {
+            font-size: 2.5em;
+            color: #ffffff;
+            margin-bottom: 0.5em;
+            border-bottom: none; /* Remove border from banner heading */
+            letter-spacing: 1.5px; /* Elegant letter spacing */
+        }
+
+        #banner p {
+            font-size: 1.2em;
+            color: #aaaaaa; /* Light gray subtext */
+            max-width: 700px;
+            margin: 0 auto;
+            font-weight: 300; /* Thinner for elegance */
+        }
+
+        /* Main Content Sections */
+        #main {
+            background-color: #0f0f0f; /* Dark background */
+        }
+
+        #main .container {
+            padding-top: 60px; /* More padding for elegance */
+            padding-bottom: 60px;
+        }
+
+        section {
+            margin-bottom: 60px; /* More spacing between sections */
+            padding-bottom: 60px;
+            border-bottom: 1px solid #333; /* Darker separator */
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        /* Footer */
+        #footer {
+            background: #000000; /* Black footer */
+            color: #aaaaaa; /* Light gray text */
+            padding: 60px 0; /* More padding for elegance */
+            text-align: center;
+            font-size: 0.9em;
+            border-top: 1px solid #333;
+        }
+
+        #footer h2 {
+            font-size: 1.5em;
+            color: #ffffff; /* White heading */
+            border-bottom: none;
+            margin-bottom: 1.5em;
+            letter-spacing: 1px; /* Elegant spacing */
+        }
+
+        #footer p {
+            margin-bottom: 0.7em;
+            color: #aaaaaa; /* Light gray text */
+        }
+
+        #footer a {
+            color: #ffffff; /* White links */
+            transition: color 0.3s ease;
+        }
+        
+        #footer a:hover {
+            color: #cccccc; /* Light gray on hover */
+        }
+
+        /* Elegant accent elements */
+        #banner:after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 1px;
+            background: #555;
+            margin: 40px auto 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2em; }
+            h2 { font-size: 1.8em; }
+            #banner h2 { font-size: 2em; }
+            #banner p { font-size: 1em; }
+            .container { width: 95%; }
+            #header .container { flex-direction: column; }
+        }
+
+        /* Add Google Font import for Montserrat */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div id="logo">
+                <h1><a href="#">ZIUA &nbsp;LIBERĂ</a></h1>
+            </div>
+            <!-- Navigation could go here if needed -->
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+        <div class="container">
+            <h2>Soluții IT&C Complete și Inovatoare</h2>
+            <p>Partenerul dumneavoastră pentru eficiență, securitate și performanță în tehnologie.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div id="main">
+        <div class="container">
+
+            <section id="despre">
+                <h2>Despre Noi</h2>
+                <p>ZIUALIBERA SRL pune la dispoziția instituțiilor publice și companiilor soluții IT&C integrate, sigure și eficiente, menite să optimizeze activitățile administrative și să îmbunătățească experiența utilizatorilor. Cu o echipă de specialiști cu peste 24 de ani de experiență, oferim soluții tehnologice complete, integrate și scalabile, adaptate nevoilor specifice. Punem un accent deosebit pe inovație, suport tehnic de calitate și siguranța maximă a datelor.</p>
+                <p>Susținem digitalizarea prin furnizarea de soluții IT&C adaptate nevoilor moderne.</p>
+            </section>
+
+            <section id="servicii">
+                <h2>Servicii Oferite</h2>
+                <ul>
+                    <li>Mentenanță și reparații IT (stații de lucru, servere, rețele, periferice)</li>
+                    <li>Consultanță IT și soluții strategice (optimizare, cloud, virtualizare)</li>
+                    <li>Gestionare și întreținere infrastructură IT</li>
+                    <li>Dezvoltare software la comandă (aplicații personalizate, ERP, CRM)</li>
+                    <li>Administrarea rețelelor și securitate cibernetică (firewall, monitorizare, criptare)</li>
+                    <li>Furnizare și instalare echipamente IT (servere, rețelistică, stocare, backup)</li>
+                    <li>Administrare website și comerț electronic</li>
+                    <li>Platforme de e-learning și management educațional</li>
+                    <li>Soluții pentru biblioteci digitale și arhivare electronică</li>
+                    <li>Consultanță pentru digitalizarea învățământului</li>
+                    <li>Comerț cu ridicata: echipamente IT&C, bunuri de uz gospodăresc, birotică/papetărie, mobilier</li>
+                </ul>
+            </section>
+
+            <section id="avantaje">
+                <h2>Avantajele Colaborării</h2>
+                <ul>
+                    <li>Suport tehnic dedicat, disponibil 24/7</li>
+                    <li>Creșterea eficienței prin digitalizare și automatizare</li>
+                    <li>Implementarea celor mai noi tehnologii pentru protecția datelor</li>
+                    <li>Reducerea costurilor operaționale prin optimizarea IT</li>
+                    <li>Acces la experți cu peste două decenii de experiență</li>
+                    <li>Conformitate cu normele și reglementările în vigoare</li>
+                    <li>Optimizarea resurselor IT</li>
+                    <li>Oferte personalizate</li>
+                    <li>Creșterea transparenței și eficienței</li>
+                    <li>Îmbunătățirea accesului la educație (platforme online)</li>
+                    <li>Securizarea datelor prin soluții avansate</li>
+                </ul>
+            </section>
+
+        </div> <!-- /container -->
+    </div> <!-- /main -->
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Pentru relații și oferte personalizate, în curînd ne veți putea contacta.</p>
+          
+            <p>&copy; 2024 ZIUALIBERA SRL. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
